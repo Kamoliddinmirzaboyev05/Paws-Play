@@ -602,6 +602,7 @@ footer{
                     padding: 8px 10px;
                     border-radius: 8px;
                     background-color: #DEDEDE;
+                    border: none;
                     &::placeholder{
                         color: #667085;
                     }
@@ -610,6 +611,7 @@ footer{
                     padding: 5px 10px;
                     border-radius: 8px;
                     font-size: 16px;
+                    border: none;
                     font-weight: 600;
                 }
             }
@@ -644,6 +646,30 @@ footer{
                     }
                  }
 
+            }
+        }
+        .hr{
+            height: 1px;
+            width: 100%;
+            background-color: #dfdfdf;
+        }
+        .footer-foot{
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            .copy{
+                p{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #CECECE;
+                }
+            }
+            .socials{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                color: #CECECE;
+                font-size: 22px;
             }
         }
     }
