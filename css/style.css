@@ -425,21 +425,24 @@ header .hero .container button p {
 }
 .section6 .container .sct-title {
   display: flex;
+  padding-top: 80px;
   align-items: center;
   gap: 10px;
   padding-bottom: 20px;
 }
 .section6 .container .sct-title h1 {
+  color: white;
   font-size: 35px;
   font-weight: 500;
 }
 .section6 .container .hr {
   height: 1px;
   width: 100%;
-  background-color: #dfdfdf;
+  background-color: #4c525e;
 }
 .section6 .container .sct6-block {
   display: flex;
+  padding: 30px;
   align-items: center;
   gap: 40px;
   padding-top: 50px;
@@ -449,10 +452,16 @@ header .hero .container button p {
   border-radius: 16px;
   padding: 40px;
 }
+.section6 .container .sct6-block .form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #344054;
+}
 .section6 .container .sct6-block .form .name {
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 .section6 .container .sct6-block .form .name .fname, .section6 .container .sct6-block .form .name .lname {
   display: flex;
@@ -468,6 +477,7 @@ header .hero .container button p {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding-bottom: 20px;
 }
 .section6 .container .sct6-block .form .email input {
   padding: 10px;
@@ -485,6 +495,12 @@ header .hero .container button p {
   border-radius: 5px;
   border: #d0d5dd 1px solid;
 }
+.section6 .container .sct6-block .form .chek {
+  padding-bottom: 30px;
+}
+.section6 .container .sct6-block .form .chek span {
+  text-decoration: underline;
+}
 .section6 .container .sct6-block .form .chek label {
   color: #667085;
 }
@@ -498,6 +514,100 @@ header .hero .container button p {
 }
 .section6 .container .sct6-block .contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 600px;
+  gap: 60px;
+}
+.section6 .container .sct6-block .contact .box {
+  color: white;
+  width: 250px;
+}
+.section6 .container .sct6-block .contact .box .box-img {
+  margin-bottom: 10px;
+}
+.section6 .container .sct6-block .contact .box h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.section6 .container .sct6-block .contact .box p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #CECECE;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #101828;
+  border-top: 1px solid #4c525e;
+}
+footer .container {
+  padding-top: 50px;
+}
+footer .container .subscribe {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+footer .container .subscribe .subs-text {
+  color: white;
+}
+footer .container .subscribe .subs-text h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+footer .container .subscribe .subs-text p {
+  font-size: 20px;
+  color: #CECECE;
+}
+footer .container .subscribe .subs-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .container .subscribe .subs-button input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: #DEDEDE;
+}
+footer .container .subscribe .subs-button input::placeholder {
+  color: #667085;
+}
+footer .container .subscribe .subs-button button {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .container .footer-links {
+  padding-top: 50px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  gap: 80px;
+}
+footer .container .footer-links .foot-logo p {
+  width: 280px;
+}
+footer .container .footer-links .foot-logo img {
+  margin-bottom: 30px;
+}
+footer .container .footer-links .foot-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+footer .container .footer-links .foot-links p {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: #CECECE;
+}
+footer .container .footer-links .foot-links p:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
