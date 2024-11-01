@@ -13,10 +13,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans 3';
+    transition: all .5s ease;
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+button{
+    &:hover{
+        opacity: .7;
+    }
 }
 header{
     background-image: url('../img/hero-back.png');
@@ -37,6 +43,9 @@ header{
                     a{
                         color: white;
                         text-decoration: none;
+                        &:hover{
+                            color:blue ;
+                        }
                     }
                 }
             }
@@ -46,7 +55,14 @@ header{
                 border-radius: 50px;
                 font-size: 16px;
                 font-weight: 600;
+                border: none;
                 color: #101828;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+            .bar{
+                display: none;
             }
         }
     }
@@ -79,6 +95,10 @@ header{
                 display: flex;
                 padding: 15px 20px;
                 align-items: center;
+                &:hover{
+                    opacity: .8;
+                    color: #101828;
+                }
                 p{
                     width: 100px;
                     font-weight: 600;
@@ -143,11 +163,21 @@ header{
                     justify-content: center;
                     gap: 50px;
                     list-style: none;
+                    li{
+                        padding: 10px 15px;
+                        border-radius: 8px;   
+                        &:hover{
+                            background-color: #000;
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
                     li:nth-child(1){
                         padding: 10px 15px;
                         background-color: #000;
                         border-radius: 8px;
-
+                        
                         a{
                             color: white;
                         }
@@ -216,7 +246,18 @@ header{
                 display: flex;
                 flex-wrap: wrap;
                 gap: 15px;
-                
+                .box{
+                    overflow: hidden;
+                    &:hover{
+                        h1{
+                        transform: translateY(0px);
+                        }
+                    }
+                    h1{
+                        transform: translateY(250px);
+
+                    }
+                }
                 .box{
                     &:nth-child(1){
                         background-image: url(../img/back1.png);
@@ -278,9 +319,17 @@ header{
                     align-items: center;
                     justify-content: center;
                     width: 368px;
+                    overflow: hidden;
                     height: 675px;
+                    &:hover{
+                        h1{
+                        transform: translateY(0px);
+                        }
+                    }
                     h1{
                         color: white;
+                        transform: translateY(400px);
+
                         font-size: 50px;
                         font-weight: 700;
                     }
@@ -358,6 +407,9 @@ header{
             justify-content: center;
             gap: 20px;
             .sct4-box{
+                &:hover{
+                    transform: scale(.97);
+                }
                 h2{
                     font-size: 20px;
                     font-weight: 600;
@@ -375,6 +427,11 @@ header{
                     font-size: 24px;
                     display: flex;
                     gap: 20px;
+                    i{
+                        &:hover{
+                            color: #101828;
+                        }
+                    }
                 }
             }
         }
@@ -554,6 +611,11 @@ header{
             .box{
                 color: white;
                 width: 250px;
+                &:hover{
+                    .box-img{
+                        transform: scale(1.1) translateX(10px);
+                    }
+                }
                 .box-img{
                     margin-bottom: 10px;
                 }
@@ -622,6 +684,7 @@ footer{
             color: white;
             justify-content: center;
             gap: 80px;
+            padding-bottom: 50px;
             .foot-logo{
                 p{
                     width: 280px;
@@ -670,7 +733,61 @@ footer{
                 gap: 20px;
                 color: #CECECE;
                 font-size: 22px;
+                i{
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
             }
         }
     }
 }
+
+
+
+@media (max-width:480px){
+    header{
+        background-image: url('../img/mobile.png');
+            nav{
+                .container{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    .navbar-nav{
+                        .links{
+                            display: none;
+                        }
+                    }
+                    button{
+                        display: none;
+                    }
+                    .bar{
+                        display: block;
+                        color: white;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .hero{
+                .container{
+                    padding: 0;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 80px;
+                    h1{
+                        padding: 0;
+                        padding-top: 80px;
+                        font-size: 30px;
+                        font-weight: 600;
+                        width: 300px;
+                        letter-spacing: 2%;
+                        line-height: 40px;
+                    }
+                    p{
+                        font-size: 14px;
+                        width: 300px;
+                    }
+                }
+            }
+            
+        }
+    }
